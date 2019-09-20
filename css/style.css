@@ -23,7 +23,7 @@ body {
     background-size: cover;
     background-position: top;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100% );
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100% );
 }
 
 .logo-box {
@@ -45,7 +45,9 @@ body {
 
  .heading-primary{
      color: #ffffff;
-     text-transform: uppercase; 
+     text-transform: uppercase;
+
+     backface-visibility: hidden;
  }
 
  .heading-primary-main{
@@ -54,8 +56,7 @@ body {
     font-weight: 900;
     letter-spacing: 20px;
 
-    animation-name: moveInLeft;
-    animation-duration: 2.1s;
+    animation: moveInLeft 2.1s ease-out;
  }
 
  .heading-primary-sub{
@@ -63,6 +64,9 @@ body {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 21px;
+
+    animation-name: moveInRight;
+    animation-duration: 2.1s;
  }
 
  @keyframes moveInLeft {
@@ -80,3 +84,19 @@ body {
         transform: translate(0);
      }
  }
+
+ @keyframes moveInRight {
+    0% {
+       opacity: 0;
+       transform: translate(100px);
+    }
+    
+    70% {
+       transform: translate(-20px);
+    }
+
+    100% {
+       opacity: 1;
+       transform: translate(0);
+    }
+}
