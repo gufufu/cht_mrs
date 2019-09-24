@@ -1,0 +1,22 @@
+{
+  "name": "starter-mrs",
+  "version": "1.0.0",
+  "description": "A CSS and HTML project for MrsOficina5 ",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gufufu/cht_mrs.git"
+  },
+  "author": "vmDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gufufu/cht_mrs/issues"
+  },
+  "homepage": "https://github.com/gufufu/cht_mrs#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
