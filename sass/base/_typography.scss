@@ -56,6 +56,16 @@ body {
     text-transform: uppercase;
 }
 
+.heading-book {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.4;
+    padding: 10px 0;
+    background-image: -webkit-gradient(linear,100% 30%,20% 0%,from(#fc6),to(#7d1919));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .paragraph {
     font-size: $default-font-size;
 
